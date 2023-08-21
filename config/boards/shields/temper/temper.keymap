@@ -14,30 +14,30 @@
 #define FUN 3
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUM NAV>;
-            then-layer = <FUN>;
-        };
-    };
-    behaviors {
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-        smart_shft: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SMART_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT)>;
-        };
-    };
+    //conditional_layers {
+    //    compatible = "zmk,conditional-layers";
+    //    tri_layer {
+    //        if-layers = <NUM NAV>;
+    //        then-layer = <FUN>;
+    //    };
+    //};
+    //behaviors {
+    //    bspc_del: backspace_delete {
+    //        compatible = "zmk,behavior-mod-morph";
+    //        label = "BACKSPACE_DELETE";
+    //        #binding-cells = <0>;
+    //        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+    //        mods = <(MOD_LSFT|MOD_RSFT)>;
+    //        keep-mods = <(MOD_RSFT)>;
+    //    };
+    //    smart_shft: smart_shift {
+    //        compatible = "zmk,behavior-mod-morph";
+    //        label = "SMART_SHIFT";
+    //        #binding-cells = <0>;
+    //        bindings = <&sk LSHFT>, <&caps_word>;
+    //        mods = <(MOD_LSFT)>;
+    //    };
+    //};
         keymap {
                 compatible = "zmk,keymap";
 
@@ -51,7 +51,7 @@
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P   
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-        &kp LGUI &sk NUM &smart_shft &kp SPACE &sk NAV &bspc_del
+        &kp LGUI &sk NUM &kp LSHFT &kp SPACE &sk NAV &kp BSPC
                         >;
                 };
                 num_layer {
@@ -82,18 +82,18 @@
                         >;
                 };
                 
-                fun_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &trans       &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
-   &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
-                             &trans       &trans       &trans            &trans &trans &trans
-                        >;
-                };
-        };
+//                 fun_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+// //             | GUI |     | SPC |   | ENT |     | ALT |
+//                         bindings = <
+//    &trans       &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
+//    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
+//    &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
+//                              &trans       &trans       &trans            &trans &trans &trans
+//                         >;
+//                 };
+//         };
 };
