@@ -68,19 +68,19 @@
                         >;
                 };
 
-//                 nav_layer {
-// // -----------------------------------------------------------------------------------------
-// // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-// //             | GUI |     | SPC |   | ENT |     | ALT |
-//                         bindings = <
-//    &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
-//    &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
-//    &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
-//                         &trans       &trans       &trans    &trans   &trans   &kp RALT
-//                         >;
-//                 };
+                nav_layer {
+// -----------------------------------------------------------------------------------------
+// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+//             | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
+   &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
+   &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
+                        &trans       &trans       &trans    &trans   &trans   &trans
+                        >;
+                };
 //                 
 //                 fun_layer {
 // // -----------------------------------------------------------------------------------------
