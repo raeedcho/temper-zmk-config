@@ -54,34 +54,34 @@
         &kp LGUI &sk NUM &kp LSHFT &kp SPACE &sk NAV &kp BSPC
                         >;
                 };
-                num_layer {
-// -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  *  |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 |  ~  |   |  |  |  4  |  5  |  6  |     |
-// |     |     |     |     |  `  |   |  \  |  1  |  2  |  3  |     |
-//             | GUI |     | SPC |   |  0  |     |     |
-                        bindings = <
-   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp STAR &kp N7   &kp N8 &kp N9 &kp MINUS
-   &kp CARET &kp LBRC &kp LBKT &kp LPAR &kp TILDE   &kp PIPE &kp N4   &kp N5 &kp N6 &kp PLUS
-   &kp AMPS  &kp RBRC &kp RBKT &kp RPAR &kp GRAVE   &kp BSLH &kp N1   &kp N2 &kp N3 &kp EQUAL
-                      &trans   &trans   &trans      &kp N0   &trans   &trans
-                        >;
-                };
-
-                nav_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
-   &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
-   &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
-                        &trans       &trans       &trans    &trans   &trans   &kp RALT
-                        >;
-                };
-                
+//                 num_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  1  |  2  |  3  |  4  |  5  |   |  *  |  7  |  8  |  9  |  0  |
+// // | BT1 | BT2 | BT3 | BT4 |  ~  |   |  |  |  4  |  5  |  6  |     |
+// // |     |     |     |     |  `  |   |  \  |  1  |  2  |  3  |     |
+// //             | GUI |     | SPC |   |  0  |     |     |
+//                         bindings = <
+//    &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp STAR &kp N7   &kp N8 &kp N9 &kp MINUS
+//    &kp CARET &kp LBRC &kp LBKT &kp LPAR &kp TILDE   &kp PIPE &kp N4   &kp N5 &kp N6 &kp PLUS
+//    &kp AMPS  &kp RBRC &kp RBKT &kp RPAR &kp GRAVE   &kp BSLH &kp N1   &kp N2 &kp N3 &kp EQUAL
+//                       &trans   &trans   &trans      &kp N0   &trans   &trans
+//                         >;
+//                 };
+// 
+//                 nav_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+// //             | GUI |     | SPC |   | ENT |     | ALT |
+//                         bindings = <
+//    &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
+//    &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
+//    &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
+//                         &trans       &trans       &trans    &trans   &trans   &kp RALT
+//                         >;
+//                 };
+//                 
 //                 fun_layer {
 // // -----------------------------------------------------------------------------------------
 // // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
