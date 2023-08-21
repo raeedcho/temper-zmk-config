@@ -82,31 +82,31 @@
                         >;
                 };
 
-                fun_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
-   &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
-   &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
-                        &trans       &trans       &trans    &trans   &trans   &trans
-                        >;
-                };
 //                 fun_layer {
 // // -----------------------------------------------------------------------------------------
-// // |     |     |     |     | OUT |   |     |  &  |  *  |  (  |  )  |
-// // | BT0 | BT1 | BT2 | BT3 | BT4 |   |     |  =  |  [  |  ]  |  \  |
-// // |     |     |BTCLR|     |     |   |     |  +  |  {  |  }  | "|" |
-// //             |     |     |     |   |     |     |     |
+// // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+// //             | GUI |     | SPC |   | ENT |     | ALT |
 //                         bindings = <
-//    &trans       &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
-//    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
-//    &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
-//                              &trans       &trans       &trans            &trans &trans &trans
+//    &kp ESC   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp TAB   &trans   &kp END  &kp HOME &trans    &kp BSPC
+//    &sk LSHFT &sk LCTRL  &sk LALT     &sk LGUI     &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp DEL
+//    &trans    &kp K_PREV &kp K_PP     &kp K_NEXT   &trans    &trans   &kp RET  &trans   &trans    &trans
+//                         &trans       &trans       &trans    &trans   &trans   &trans
 //                         >;
 //                 };
+                fun_layer {
+// -----------------------------------------------------------------------------------------
+// |     |     |     |     | OUT |   |     |  &  |  *  |  (  |  )  |
+// | BT0 | BT1 | BT2 | BT3 | BT4 |   |     |  =  |  [  |  ]  |  \  |
+// |     |     |BTCLR|     |     |   |     |  +  |  {  |  }  | "|" |
+//             |     |     |     |   |     |     |     |
+                        bindings = <
+   &trans       &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
+   &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
+                             &trans       &trans       &trans            &trans &trans &trans
+                        >;
+                };
         };
 };
