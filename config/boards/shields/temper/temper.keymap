@@ -10,9 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define NUM 1
-#define NAV 2
-#define FUN 3
+#define QWERTY 1
+#define NUM 2
+#define NAV 3
+#define FUN 4
 
 / {
     conditional_layers {
@@ -49,23 +50,36 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NUM | SFT |   | SPC | NAV  | ENT |
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P   
-   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI
-   &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-        &kp LGUI &sl NUM &smart_shft &kp SPACE &sl NAV &bspc_del
+   &kp Q &kp W &kp F    &kp P        &kp B     &kp J   &kp L     &kp U     &kp Y   &kp ;   
+   &kp A &kp R &kp T    &kp S        &kp G     &kp M   &kp N     &kp E     &kp I   &kp O
+   &kp Z &kp X &kp C    &kp D        &kp V     &kp K   &kp H     &kp COMMA &kp DOT &kp FSLH
+               &kp LGUI &smart_shift &sl NUM   &sl NAV &kp SPACE &bspc_del
+                        >;
+                };
+                qwerty_layer {
+// -----------------------------------------------------------------------------------------
+// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+//             | GUI | NUM | SFT |   | SPC | NAV  | ENT |
+                        bindings = <
+   &kp Q &kp W &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I     &kp O   &kp P   
+   &kp A &kp S &kp D  &kp F  &kp G     &kp H  &kp J  &kp K     &kp L   &kp SEMI
+   &kp Z &kp X &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
+               &trans &trans &trans    &trans &trans &trans
                         >;
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  *  |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 |  ~  |   |  |  |  4  |  5  |  6  |     |
-// |     |     |     |     |  `  |   |  \  |  1  |  2  |  3  |     |
+// |  !  |  @  |  #  |  $  |  %  |   |  *  |  7  |  8  |  9  |  0  |
+// |  ^  |  {  |  [  |  (  |  ~  |   |  |  |  4  |  5  |  6  |     |
+// |  &  |  }  |  ]  |  )  |  `  |   |  \  |  1  |  2  |  3  |     |
 //             |     |     |     |   |  0  |     |     |
                         bindings = <
-   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp STAR &kp N7   &kp N8 &kp N9 &kp MINUS
-   &kp CARET &kp LBRC &kp LBKT &kp LPAR &kp TILDE   &kp PIPE &kp N4   &kp N5 &kp N6 &kp PLUS
-   &kp AMPS  &kp RBRC &kp RBKT &kp RPAR &kp GRAVE   &kp BSLH &kp N1   &kp N2 &kp N3 &kp EQUAL
-                      &trans   &trans   &trans      &kp N0   &trans   &trans
+   &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp STAR &kp N7 &kp N8 &kp N9 &kp MINUS
+   &kp CARET &kp LBRC &kp LBKT &kp LPAR &kp TILDE   &kp PIPE &kp N4 &kp N5 &kp N6 &kp PLUS
+   &kp AMPS  &kp RBRC &kp RBKT &kp RPAR &kp GRAVE   &kp BSLH &kp N1 &kp N2 &kp N3 &kp EQUAL
+                      &trans   &trans   &trans      &trans   &kp N0 &trans
                         >;
                 };
 
@@ -90,7 +104,7 @@
 // |     |     |BTCLR|     |     |   |     |  F1 |  F2 |  F3 | F12 |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   &trans       &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
+   &tog QWERTY  &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
    &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
                              &trans       &trans       &trans            &trans &trans &trans
