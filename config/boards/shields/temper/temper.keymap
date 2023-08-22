@@ -53,7 +53,7 @@
    &kp Q &kp W &kp F    &kp P        &kp B     &kp J   &kp L     &kp U     &kp Y   &kp ;   
    &kp A &kp R &kp T    &kp S        &kp G     &kp M   &kp N     &kp E     &kp I   &kp O
    &kp Z &kp X &kp C    &kp D        &kp V     &kp K   &kp H     &kp COMMA &kp DOT &kp FSLH
-               &kp LGUI &smart_shift &sl NUM   &sl NAV &kp SPACE &bspc_del
+               &kp LGUI &smart_shft &sl NUM   &sl NAV &kp SPACE &bspc_del
                         >;
                 };
                 qwerty_layer {
