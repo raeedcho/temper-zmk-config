@@ -51,7 +51,7 @@
 //             | GUI | NUM | SFT |   | SPC | NAV  | ENT |
                         bindings = <
    &kp Q &kp W &kp F    &kp P   &kp B       &kp J     &kp L   &kp U     &kp Y   &kp SEMI   
-   &kp A &kp R &kp T    &kp S   &kp G       &kp M     &kp N   &kp E     &kp I   &kp O
+   &kp A &kp R &kp S    &kp T   &kp G       &kp M     &kp N   &kp E     &kp I   &kp O
    &kp Z &kp X &kp C    &kp D   &kp V       &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH
                &kp LGUI &sl NUM &smart_shft &kp SPACE &sl NAV &bspc_del
                         >;
@@ -79,7 +79,7 @@
    &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp STAR &kp N7 &kp N8 &kp N9 &kp MINUS
    &kp CARET &kp LBRC &kp LBKT &kp LPAR &kp TILDE   &kp PIPE &kp N4 &kp N5 &kp N6 &kp PLUS
    &kp AMPS  &kp RBRC &kp RBKT &kp RPAR &kp GRAVE   &kp BSLH &kp N1 &kp N2 &kp N3 &kp EQUAL
-                      &trans   &trans   &trans      &trans   &kp N0 &trans
+                      &trans   &trans   &trans      &kp N0   &trans &trans
                         >;
                 };
 
