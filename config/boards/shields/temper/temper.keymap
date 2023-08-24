@@ -39,20 +39,34 @@
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
+        comma_semi: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT)>;
+        };
+        dot_colon: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT)>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NUM | SFT |   | SPC | NAV  | ENT |
+// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | '/" |
+// |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |
+// |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   | ,/; | ./: |  /  |
+//             | GUI | NUM | SFT |   | SPC | NAV  | BSP |
                         bindings = <
-   &kp Q &kp W &kp F    &kp P   &kp B       &kp J     &kp L   &kp U     &kp Y   &kp SEMI   
-   &kp A &kp R &kp S    &kp T   &kp G       &kp M     &kp N   &kp E     &kp I   &kp O
-   &kp Z &kp X &kp C    &kp D   &kp V       &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH
+   &kp Q &kp W &kp F    &kp P   &kp B       &kp J     &kp L   &kp U       &kp Y      &kp APOS   
+   &kp A &kp R &kp S    &kp T   &kp G       &kp M     &kp N   &kp E       &kp I      &kp O
+   &kp Z &kp X &kp C    &kp D   &kp V       &kp K     &kp H   &comma_semi &dot_colon &kp FSLH
                &kp LGUI &sl NUM &smart_shft &kp SPACE &sl NAV &bspc_del
                         >;
                 };
@@ -61,11 +75,11 @@
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NUM | SFT |   | SPC | NAV  | ENT |
+//             | GUI | NUM | SFT |   | SPC | NAV  | BSP |
                         bindings = <
-   &kp Q &kp W &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I     &kp O   &kp P   
-   &kp A &kp S &kp D  &kp F  &kp G     &kp H  &kp J  &kp K     &kp L   &kp SEMI
-   &kp Z &kp X &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
+   &kp Q &kp W &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I       &kp O      &kp P   
+   &kp A &kp S &kp D  &kp F  &kp G     &kp H  &kp J  &kp K       &kp L      &kp SEMI
+   &kp Z &kp X &kp C  &kp V  &kp B     &kp N  &kp M  &comma_semi &dot_colon &kp FSLH
                &trans &trans &trans    &trans &trans &trans
                         >;
                 };
@@ -104,9 +118,9 @@
 // |     |     |BTCLR|     |     |   |     |  F1 |  F2 |  F3 | F12 |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   &tog QWERTY  &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F10
+   &tog QWERTY  &trans       &trans       &trans       &out OUT_TOG      &trans &kp F7 &kp F8 &kp F9 &kp F12
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans &kp F4 &kp F5 &kp F6 &kp F11
-   &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F12
+   &trans       &trans       &bt BT_CLR   &trans       &trans            &trans &kp F1 &kp F2 &kp F3 &kp F10
                              &trans       &trans       &trans            &trans &trans &trans
                         >;
                 };
