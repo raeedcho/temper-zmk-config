@@ -15,6 +15,8 @@ jobs:
         run: keymap -c ./keymap_img/temper_keymap_config.yaml parse -c 10 -z ./config/boards/shields/temper/temper.keymap --base-keymap ./keymap_img/temper_keymap_base.yaml > ./keymap_img/temper_keymap.yaml
       - name: 'Draw keymap'
         run: keymap -c ./keymap_img/temper_keymap_config.yaml draw --select-layers default num nav fun -k chocofi ./keymap_img/temper_keymap.yaml > ./keymap_img/temper_keymap.svg
+      - name: 'Check contents of keymap image'
+        run: ls -l ./keymap_img
       - name: 'Commit keymap image'
         run: |
           git config --global user.name 'GitHub Actions'
