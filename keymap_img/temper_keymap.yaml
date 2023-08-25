@@ -1,6 +1,15 @@
 layers:
   default:
-  - [Q, W, F, P, B, J, L, U, Y, .]
+  - - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: '''', s: '"'}
   - [A, R, S, T, G, M, N, E, I, O]
   - - Z
     - X
@@ -17,7 +26,7 @@ layers:
     - {t: ⇧, h: sticky, s: ⇪}
     - SPACE
     - {t: nav, h: sticky}
-    - {t: BACKSPACE, s: DELETE}
+    - {t: ⌫, s: ⌦}
   qwerty:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A

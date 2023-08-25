@@ -92,7 +92,8 @@ path {
 <rect rx="6.0" ry="6.0" x="700.696" y="77.768" width="55.303999999999995" height="52.0" class="key"/>
 <text x="728.3480000000001" y="103.768" class="tap">Y</text>
 <rect rx="6.0" ry="6.0" x="760.0" y="117.304" width="55.303999999999995" height="52.0" class="key"/>
-<text x="787.652" y="143.304" class="tap">.</text>
+<text x="787.652" y="143.304" class="tap">&#x27;</text>
+<text x="787.652" y="119.304" class="shifted">&quot;</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="173.304" width="55.303999999999995" height="52.0" class="key"/>
 <text x="59.652" y="199.304" class="tap">A</text>
 <rect rx="6.0" ry="6.0" x="91.30399999999999" y="133.768" width="55.303999999999995" height="52.0" class="key"/>
@@ -159,8 +160,8 @@ path {
 <text x="563.0344648531952" y="315.23361494171843" class="hold">sticky</text>
 </g>
 <rect rx="6.0" ry="6.0" x="601.5759999999999" y="257.584" width="55.303999999999995" height="52.0" class="key"/>
-<text x="629.228" y="283.584" class="tap" style="font-size: 78%">BACKSPACE</text>
-<text x="629.228" y="259.584" class="shifted">DELETE</text>
+<text x="629.228" y="283.584" class="tap">⌫</text>
+<text x="629.228" y="259.584" class="shifted">⌦</text>
 </g>
 <g class="layer-num">
 <text x="30.0" y="382.37495355387125" class="label">num:</text>
