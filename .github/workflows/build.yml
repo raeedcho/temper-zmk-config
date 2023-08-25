@@ -3,3 +3,26 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  doc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - run: pip install keymap_drawer
+      - name: 'Parse ZMK keymap'
+        run: keymap -c ./keymap_img/temper_keymap_config.yaml parse -c 10 -z ./config/boards/shields/temper/temper.keymap --base-keymap ./keymap_img/temper_keymap_base.yaml > ./keymap_img/temper_keymap.yaml
+      - name: 'Draw keymap'
+        run: keymap -c ./keymap_img/temper_keymap_config.yaml draw --select-layers default num nav fun -k chocofi ./keymap_img/temper_keymap.yaml > ./keymap_img/temper_keymap.svg
+      - name: 'Commit keymap image'
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add ./keymap_img/temper_keymap.svg
+          git commit -m 'doc: update keymap image'
+      - name: 'Push keymap image'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
