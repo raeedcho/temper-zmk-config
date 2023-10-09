@@ -67,6 +67,13 @@
             bindings = <&kp FSLH>, <&kp BSLH>;
             mods = <(MOD_LSFT)>;
         };
+        amps_morph: amps_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMPERSAND_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS>, <&kp PIPE>;
+            mods = <(MOD_LSFT)>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -102,11 +109,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp GRAVE       &kp AT       &kp LBRC      &kp RBRC     &kp PRCNT          &kp STAR       &kp N7        &kp N8        &kp N9      &kp MINUS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp CARET      &kp HASH      &kp LPAR      &kp RPAR      &kp DLLR          &kp PIPE       &kp N4        &kp N5        &kp N6      &kp PLUS
+      &kp CARET      &kp HASH      &kp LPAR      &kp RPAR      &kp DLLR         &kp MINUS       &kp N4        &kp N5        &kp N6      &kp PLUS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &slh_morph      &kp LT       &kp LBKT      &kp RBKT       &kp GT           &kp AMPS       &kp N1        &kp N2        &kp N3      &kp EQUAL
+      &slh_morph      &kp LT       &kp LBKT      &kp RBKT       &kp GT          &kp UNDER       &kp N1        &kp N2        &kp N3      &kp EQUAL
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                       &trans   &trans    &trans      &kp N0   &trans &kp DOT
+                                    &trans        &trans        &trans            &kp N0        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
