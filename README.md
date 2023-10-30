@@ -1,6 +1,6 @@
-# Chocofi Temper ZMK Config
+# temper ZMK Config
 
-This is my personal ZMK config for the [Chocofi Temper](https://github.com/raeedcho/chocofi-temper).
+This is my personal ZMK config for the [temper](https://github.com/raeedcho/chocofi-temper).
 
 Some notes about this config:
 - Four main layers (default, numbers/symbols, navigation, and function)
