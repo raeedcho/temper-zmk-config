@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
+            bindings = <&kp LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
         comma_semi: comma_semi {
@@ -121,9 +121,9 @@
                 nav_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       &kp TAB     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &trans            &trans       &kp HOME      &kp END        &trans        &trans
+        &trans     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &trans            &trans       &kp HOME      &kp END        &trans        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LSHFT     &sk LCTRL      &sk LALT      &sk LGUI       &trans           &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT      &kp ESC
+      &sk LSHFT     &sk LCTRL      &sk LALT      &sk LGUI      &kp TAB           &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT      &kp ESC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &trans      &kp C_PREV     &kp C_PP     &kp C_NEXT      &trans            &trans        &kp RET       &trans        &trans        &trans
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
