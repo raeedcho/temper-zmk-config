@@ -8,7 +8,6 @@
 
 / {
     chosen {
-        zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
     };
