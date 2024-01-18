@@ -32,6 +32,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+        super_bspc: super_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SUPER_BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         smart_shft: smart_shift {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT";
@@ -74,6 +81,48 @@
             bindings = <&kp AMPS>, <&kp PIPE>;
             mods = <(MOD_LSFT)>;
         };
+        qwerty_tog: qwerty_toggle {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QWERTY_TOGGLE";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&tog QWERTY>;
+        };
+        bt_clear: bt_clear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_CLEAR";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_CLR>;
+        };
+        bt0: bt_sel_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_SEL_0";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 0>;
+        };
+        bt1: bt_sel_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_SEL_1";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 1>;
+        };
+        bt2: bt_sel_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_SEL_2";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 2>;
+        };
+        bt3: bt_sel_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_SEL_3";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 3>;
+        };
+        bt4: bt_sel_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_SEL_4";
+            #binding-cells = <0>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 4>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -87,7 +136,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp LGUI      &sl NUM     &smart_shft        &kp SPACE      &sl NAV      &bspc_del
+                                   &kp LGUI      &sl NUM     &smart_shft        &kp SPACE      &sl NAV     &super_bspc
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -111,7 +160,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp CARET      &kp HASH      &kp LPAR      &kp RPAR      &kp DLLR         &kp UNDER       &kp N4        &kp N5        &kp N6      &kp PLUS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &slh_morph      &kp LT       &kp LBKT      &kp RBKT       &kp GT         &amps_morph      &kp N1        &kp N2        &kp N3      &kp EQUAL
+      &amps_morph     &kp LT       &kp LBKT      &kp RBKT       &kp GT          &slh_morph      &kp N1        &kp N2        &kp N3      &kp EQUAL
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &trans        &trans            &kp N0        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -121,11 +170,11 @@
                 nav_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &trans     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &trans            &trans       &kp HOME      &kp END        &trans        &trans
+        &trans        &trans        &trans        &trans        &trans            &trans       &kp HOME      &kp END       &kp TAB     &super_bspc
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LSHFT     &sk LCTRL      &sk LALT      &sk LGUI      &kp TAB           &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT      &kp ESC
+      &sk LSHFT     &sk LCTRL      &sk LALT      &sk LGUI      &kp TAB           &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT       &gresc
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &trans      &kp C_PREV     &kp C_PP     &kp C_NEXT      &trans            &trans        &kp RET       &trans        &trans        &trans
+        &trans       &kp DEL        &trans        &trans        &trans            &trans        &kp RET       &trans        &trans        &trans
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &trans        &trans            &trans        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -135,11 +184,11 @@
                 fun_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &tog QWERTY      &trans        &trans        &trans     &out OUT_TOG         &trans        &kp F7        &kp F8        &kp F9       &kp F12
+     &qwerty_tog   &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG         &trans        &kp F7        &kp F8        &kp F9       &kp F12
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &trans        &kp F4        &kp F5        &kp F6       &kp F11
+         &bt0          &bt1          &bt2          &bt3          &bt4             &trans        &kp F4        &kp F5        &kp F6       &kp F11
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &trans        &trans      &bt BT_CLR      &trans        &trans            &trans        &kp F1        &kp F2        &kp F3       &kp F10
+      &bt_clear     &kp C_PREV     &kp C_PP     &kp C_NEXT      &trans            &trans        &kp F1        &kp F2        &kp F3       &kp F10
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &trans        &trans            &trans        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
