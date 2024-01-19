@@ -85,43 +85,43 @@
             compatible = "zmk,behavior-tap-dance";
             label = "QWERTY_TOGGLE";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&tog QWERTY>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&tog QWERTY>;
         };
         bt_clear: bt_clear {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_CLEAR";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_CLR>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_CLR>;
         };
         bt0: bt_sel_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_SEL_0";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 0>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_SEL 0>;
         };
         bt1: bt_sel_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_SEL_1";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 1>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_SEL 1>;
         };
         bt2: bt_sel_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_SEL_2";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 2>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_SEL 2>;
         };
         bt3: bt_sel_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_SEL_3";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 3>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_SEL 3>;
         };
         bt4: bt_sel_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_SEL_4";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_SEL 4>;
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>, <&bt BT_SEL 4>;
         };
     };
         keymap {
@@ -156,7 +156,7 @@
                 num_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp GRAVE       &kp AT       &kp LBRC      &kp RBRC     &kp PRCNT          &kp STAR       &kp N7        &kp N8        &kp N9      &kp MINUS
+      &kp TILDE       &kp AT       &kp LBRC      &kp RBRC     &kp PRCNT          &kp STAR       &kp N7        &kp N8        &kp N9      &kp MINUS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp CARET      &kp HASH      &kp LPAR      &kp RPAR      &kp DLLR         &kp UNDER       &kp N4        &kp N5        &kp N6      &kp PLUS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
