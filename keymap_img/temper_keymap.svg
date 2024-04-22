@@ -222,7 +222,7 @@ path {
 <g transform="translate(599, 228)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">LA(BACKSPACE)</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">Alt+ BACKSPACE</tspan></text>
 </g>
 </g>
 </g>
@@ -422,7 +422,7 @@ path {
 <g transform="translate(758, 87)" class="key keypos-9">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">LA(BACKSPACE)</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">Alt+ BACKSPACE</tspan></text>
 </g>
 <g transform="translate(30, 143)" class="key keypos-10">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
