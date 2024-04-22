@@ -22,4 +22,4 @@ jobs:
       config_path: "keymap_img/keymap_drawer.config.yaml"  # config file, ignored if it does not exist
       output_folder: "keymap_img"                          # path to save produced SVG and keymap YAML files
       parse_args: "temper:'-c 10'"                         # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "temper:'-k chocofi'"                     # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      draw_args: "temper:'-k chocofi -s default num nav fun'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
