@@ -176,7 +176,7 @@
         nav_layer {
             bindings = <
   &kp ESC   &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp UP_ARROW  &kp TAB    &super_bspc
-  &kp CAPS  &none   &none   &trans  &trans    &none   &kp DOWN  &kp DOWN      &kp RIGHT  &gresc
+  &kp CAPS  &none   &none   &trans  &trans    &none   &kp LEFT  &kp DOWN      &kp RIGHT  &gresc
   &kp DEL   &trans  &trans  &trans  &trans    &trans  &none     &trans        &trans     &trans
                     &trans  &trans  &trans    &trans  &trans    &trans
             >;
