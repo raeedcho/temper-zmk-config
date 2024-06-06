@@ -10,11 +10,10 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEFAULT 0
-#define QWERTY 1
-#define NUM 2
-#define NAV 3
-#define FUN 4
+#define QWERTY 0
+#define NUM 1
+#define NAV 2
+#define FUN 3
 
 / {
     conditional_layers {
