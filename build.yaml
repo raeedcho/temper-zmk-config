@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: temper_left nice_view_adapter
+    shield: temper_left
   - board: nice_nano_v2
-    shield: temper_right nice_view_adapter
+    shield: temper_right
   - board: nice_nano_v2 
     shield: settings_reset
