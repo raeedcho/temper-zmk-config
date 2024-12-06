@@ -27,7 +27,7 @@
         };
     };
     behaviors {
-        lhrm: positional_hold_tap {
+        lhrm: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavour = "balanced";
@@ -37,7 +37,7 @@
             hold-trigger-on-release;
         };
 
-        rhrm: positional_hold_tap {
+        rhrm: right_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavour = "balanced";
