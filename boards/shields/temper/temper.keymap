@@ -46,25 +46,6 @@
             hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  10 11 12 13 14  20 21 22 23 24  25 26 27 28 29  30 31 32  33 34 35>;
             hold-trigger-on-release;
         };
-      
-        qmrk_excl: qmrk_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
-            mods = <(MOD_LSFT)>;
-        };
-        slh_morph: slh_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <(MOD_LSFT)>;
-        };
-        amps_morph: amps_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp PIPE>;
-            mods = <(MOD_LSFT)>;
-        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -78,7 +59,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &kp LT        &kp RT         &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                &mt LCMD ESC  &lt SYM SPACE  &lt NUM TAP       &lt FUN ENTER   &lt NAV BSPC   &lt MOU DEL
+                                &mt LCMD ESC   &lt 2 SPACE     &lt 3 TAP       &lt 5 ENTER    &lt 4 BSPC   &lt 6 DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
