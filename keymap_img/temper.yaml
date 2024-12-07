@@ -20,16 +20,7 @@ layers:
     - {t: E, h: LCMD}
     - {t: I, h: ⎇}
     - {t: O, h: LCTL}
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - '&comma_semi'
-    - '&dot_colon'
-    - {t: '?', s: '!'}
+  - [Z, X, C, D, V, K, H, <, RT, /]
   - - {t: ESC, h: LCMD}
     - {t: SPACE, h: sym}
     - {t: TAP, h: num}
