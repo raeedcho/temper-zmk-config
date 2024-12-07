@@ -76,9 +76,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &lhrm LCTRL A &lhrm LALT R  &lhrm LCMD S  &lhrm LSFT T      &kp G             &kp M      &rhrm RSFT N  &rhrm LCMD E &rhrm LALT I  &rhrm LCTL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
+        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &kp LT        &kp RT         &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                &mt LCMD ESC  &lt SYM SPACE &lt NUM TAP       &lt FUN ENTER &lt NAV BSPC   &lt MOU DEL
+                                &mt LCMD ESC  &lt SYM SPACE  &lt NUM TAP       &lt FUN ENTER   &lt NAV BSPC   &lt MOU DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
