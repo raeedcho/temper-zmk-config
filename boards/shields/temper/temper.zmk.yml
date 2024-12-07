@@ -5,7 +5,7 @@ type: shield
 url: https://github.com/raeedcho/chocofi-temper
 requires: 
   - pro_micro
-exposes:
+# exposes:
 features:
   - keys
 siblings:
