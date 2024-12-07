@@ -12,12 +12,12 @@ layers:
     - {t: '''', s: '"'}
   - - {t: A, h: ⌃}
     - {t: R, h: ⎇}
-    - {t: S, h: LCMD}
+    - {t: S, h: ⌘}
     - {t: T, h: ⇧}
     - G
     - M
     - {t: N, h: ⇧}
-    - {t: E, h: LCMD}
+    - {t: E, h: ⌘}
     - {t: I, h: ⎇}
     - {t: O, h: LCTL}
   - - Z
@@ -30,7 +30,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: /, s: '?'}
-  - - {t: ESC, h: LCMD}
+  - - {t: ESC, h: ⌘}
     - {t: SPACE, h: sym}
     - {t: ↹, h: num}
     - {t: ENTER, h: fun}
@@ -40,12 +40,12 @@ layers:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⌃}
     - {t: S, h: ⎇}
-    - {t: D, h: LCMD}
+    - {t: D, h: ⌘}
     - {t: F, h: ⇧}
     - G
     - H
     - {t: J, h: ⇧}
-    - {t: K, h: LCMD}
+    - {t: K, h: ⌘}
     - {t: L, h: ⎇}
     - {t: '''', h: LCTL, s: '"'}
   - - Z
@@ -105,7 +105,7 @@ layers:
     - {t: '=', s: +}
   - - ⌃
     - ⎇
-    - LCMD
+    - ⌘
     - ⇧
     - {t: ▽, type: trans}
     - {t: /, s: '?'}
@@ -142,7 +142,7 @@ layers:
     - PG UP
   - - ⌃
     - ⎇
-    - LCMD
+    - ⌘
     - ⇧
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -184,9 +184,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ⇧
-    - LCMD
+    - ⌘
     - ⎇
-    - LCTL
+    - ⌃
   - - F1
     - F2
     - F3
