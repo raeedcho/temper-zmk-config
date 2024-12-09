@@ -58,12 +58,77 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: /, s: '?'}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - {t: ESC, h: ⌘}
+    - {t: SPACE, h: sym}
+    - {t: ↹, h: num}
+    - {t: ENTER, h: fun}
+    - {t: BSPC, h: nav}
+    - {t: DEL, h: mouse}
+  default_win:
+  - - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: '''', s: '"'}
+  - - {t: A, h: ⌘}
+    - {t: R, h: ⎇}
+    - {t: S, h: LCTL}
+    - {t: T, h: ⇧}
+    - G
+    - M
+    - {t: N, h: ⇧}
+    - {t: E, h: LCTL}
+    - {t: I, h: ⎇}
+    - {t: O, h: ⌘}
+  - - Z
+    - X
+    - C
+    - D
+    - V
+    - K
+    - H
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - {t: ESC, h: LCTL}
+    - {t: SPACE, h: sym}
+    - {t: ↹, h: num}
+    - {t: ENTER, h: fun}
+    - {t: BSPC, h: nav}
+    - {t: DEL, h: mouse}
+  qwerty_win:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: D, h: LCTL}
+    - {t: F, h: ⇧}
+    - G
+    - H
+    - {t: J, h: ⇧}
+    - {t: K, h: LCTL}
+    - {t: L, h: ⎇}
+    - {t: '''', h: ⌘, s: '"'}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - {t: ESC, h: LCTL}
+    - {t: SPACE, h: sym}
+    - {t: ↹, h: num}
+    - {t: ENTER, h: fun}
+    - {t: BSPC, h: nav}
+    - {t: DEL, h: mouse}
   sym:
   - ['!', '@', '#', $, '%', ^, '&', '*', (, )]
   - - {t: '`', s: '~'}
@@ -241,11 +306,11 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
   sys:
-  - - {t: qwerty, h: toggle}
+  - - {t: default, h: toggle}
+    - {t: qwerty, h: toggle}
+    - {t: default_win, h: toggle}
+    - {t: qwerty_win, h: toggle}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - OUT TOG
     - {t: ▽, type: trans}
     - MUTE
     - VOL DN
@@ -265,7 +330,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - OUT TOG
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
