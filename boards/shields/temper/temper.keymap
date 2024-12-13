@@ -21,8 +21,7 @@
 #define SYS 9
 
 &lt {
-  flavor = "hold-preferred";
-  quick-tap-ms = <200>;
+  flavor = "balanced";
 };
 
 / {
@@ -37,7 +36,7 @@
         lhrm: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -48,7 +47,7 @@
         rhrm: right_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
