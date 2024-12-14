@@ -115,11 +115,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp EXCL        &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT        &kp CARET       &kp AMPS     &kp STAR      &kp LPAR      &kp RPAR
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE      &kp STAR      &kp PLUS      &kp EQUAL    &kp BSLH          &kp PIPE       &kp LPAR      &kp LBRC      &kp LBKT      &kp DQT
+      &kp GRAVE      &kp STAR      &kp PLUS      &kp EQUAL    &kp BSLH          &kp PIPE       &kp LPAR      &kp LBRC      &kp LBKT      &kp LT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp TILDE      &kp SLASH      &kp MINUS    &kp UNDER       &kp EXCL        &kp AMPS      &kp RPAR        &kp RBRC     &kp RBKT      &kp SQT
+      &kp TILDE      &kp SLASH      &kp MINUS    &kp UNDER       &kp EXCL        &kp AMPS      &kp RPAR        &kp RBRC     &kp RBKT      &kp GT
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    &trans        &trans        &trans            &trans        &trans        &trans
+                                    &trans        &trans        &trans            &kp SQT        &kp DQT        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
