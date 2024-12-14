@@ -140,7 +140,7 @@ layers:
     - (
     - '{'
     - {t: '[', s: '{'}
-    - '"'
+    - <
   - - '~'
     - {t: /, s: '?'}
     - {t: '-', s: _}
@@ -150,12 +150,12 @@ layers:
     - )
     - '}'
     - {t: ']', s: '}'}
-    - ''''
+    - '>'
   - - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''''
+    - '"'
     - {t: ▽, type: trans}
   num:
   - - {t: ▽, type: trans}
