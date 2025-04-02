@@ -204,7 +204,7 @@
 &kp EXCLAMATION   &kp AT             &kp HASH       &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LEFT_GUI      &kp LEFT_ALT       &kp LCTRL      &kp LEFT_SHIFT  &kp CAPSLOCK       &kp PLUS   &kp MINUS      &kp GRAVE     &kp PIPE              &kp SINGLE_QUOTE
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LA(C))  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp EQUAL  &kp UNDER      &kp TILDE     &kp BACKSLASH         &kp DOUBLE_QUOTES
-                                     &trans         &trans          &trans             &trans     &trans         &trans
+                                     &trans         &kp BACKSPACE          &trans             &trans     &trans         &trans
             >;
         };
 
