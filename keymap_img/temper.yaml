@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: temper}
 layers:
   default:
   - - Q
@@ -21,7 +22,7 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - ⌘
+  - - cmd
     - num
     - {t: ⇧, s: ⇪}
     - SPACE
@@ -165,4 +166,41 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
+  cmd:
+  - - ⌘Q
+    - ⌘W
+    - F
+    - Gui+P
+    - B
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - ⇧
+    - ⌃
+    - ⎇
+    - ⌘
+    - Gui+G
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - ⌘Z
+    - ⌘X
+    - ⌘C
+    - D
+    - ⌘V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
